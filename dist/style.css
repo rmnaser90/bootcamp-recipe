@@ -1,0 +1,33 @@
+
+#inputIngredient{
+    text-align: center;
+    width: 90%;
+    height: 60px;
+    font-size: 200%;
+}
+
+#getRecipeBtn{
+    margin: 0px;
+    width:40%;
+    height: 60px;
+    border: none;
+    background-color: seagreen;
+    transition: 0.4s;
+    font-size: 200%;
+}
+
+#getRecipeBtn:hover{
+    font-size: 250%;
+}
+
+.inputContainer{
+    width: 100%;
+   padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+body{
+    margin: 0px;
+}
