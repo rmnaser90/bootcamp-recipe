@@ -16,25 +16,19 @@ router.get('/recipes/:ingredient', function (req, res) {
         const dataRes = JSON.parse(data)
         let id = 0
         const recipes = dataRes.results.map( r => {
-            
             id++
             return {
                 title: r.title,
                 ingredients: r.ingredients,
                 href: r.href,
                 thumbnail: r.thumbnail,
-                id:  `id${id}`
+                id:  `${ingredient}${id}`
             }
         })
-
         console.log(recipes);
         res.send(recipes)
     })
 
 })
-
-
-
-
 
 module.exports = router

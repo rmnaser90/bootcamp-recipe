@@ -1,5 +1,5 @@
 class Renderer {
-  
+
     render(data) {
         const source = $('#recipe-template').html()
         const template = Handlebars.compile(source)

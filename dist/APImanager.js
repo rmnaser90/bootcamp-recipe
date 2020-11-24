@@ -1,4 +1,4 @@
-class APImanager{
+class APImanager {
     constructor() {
         this.data = []
     }
@@ -9,11 +9,11 @@ class APImanager{
             url: `/recipes/${ingredient}`,
             success: res => {
                 console.log("data loaded");
-               this.data=res
+                this.data = res
             }
         })
     }
-    getRecipeById(id){
+    getRecipeById(id) {
         const recipe = this.data.find(r => r.id == id)
         return recipe
     }
