@@ -9,8 +9,22 @@
 </head>
 
 <body>
-    <script id="players-template" type="text/x-handlebars-template">
+    <script id="recipe-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <div class="recipe" data-id="{{id}}">
+            <a href="{{href}}" class="title">{{title}}</a>
+        <img class="mealImg" src="{{thumbnail}}" alt="meal photo">
+        <div class="ingredients">
+            <ul>
+            {{#each ingredients}}
+            <li>{{this}}</li>
+            {{/each}}
+            </ul>
+        </div>
 
+
+    </div>
+        {{/each}}
     
     </script>
 
@@ -24,7 +38,7 @@
     <script src="jquery/dist/jquery.js"></script>
     <script src="handlebars/dist/handlebars.js"></script>
     <script src="renderer.js"></script>
-    <script src="frontAPImanager.js"></script>
+    <script src="APImanager.js"></script>
     <script src="main.js"></script>
 </body>
 

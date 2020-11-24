@@ -30,4 +30,35 @@
 
 body{
     margin: 0px;
+    background-color: darkgray;
+}
+
+#recipeContainer{
+width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.mealImg{
+    display: block;
+    width: 200px;
+    height: auto;
+}
+.title{
+    display: block;
+}
+.recipe{
+    background-color: darkkhaki;
+    box-shadow: 0px 0px 10px 3px black;
+    width: 400px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+.ingredients{
+    justify-self: start;
 }

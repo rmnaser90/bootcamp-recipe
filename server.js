@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname,'node_modules')))
 app.use('/',api)
 
 
-const port=3000
+const port=8080
 app.listen(port,function () {
 console.log(`server is up and running at port: ${port}`);
 

@@ -1,10 +1,10 @@
 class Renderer {
   
     render(data) {
-        const source = $('#players-template').html()
+        const source = $('#recipe-template').html()
         const template = Handlebars.compile(source)
-        $('#playersContainer').empty()
+        $('recipeContainer').empty()
         const html = template({ data })
-        $('#playersContainer').append(html)
+        $('#recipeContainer').append(html)
     }
 }
